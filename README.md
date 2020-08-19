@@ -1,11 +1,11 @@
 
-**I'm not an active Vagrant user and no longer maintaining this project.**
+**FORKED FROM ARCHIVED REPO**
 
+I intend to update/modify this for Alfred 4; it is currently working after using Fixum to update the Alfred-Workflow library.
 
 # VagrantUP
-[![Build Status](https://travis-ci.org/m1keil/alfred-vagrant-workflow.svg?branch=master)](https://travis-ci.org/m1keil/alfred-vagrant-workflow) [![Coverage Status](https://coveralls.io/repos/m1keil/alfred-vagrant-workflow/badge.svg)](https://coveralls.io/r/m1keil/alfred-vagrant-workflow)
 
-A workflow for [Alfred2/3](http://www.alfredapp.com) which provides quick control over [Vagrant](vagrantup.com).
+A workflow for [Alfred 4](http://www.alfredapp.com) which provides quick control over [Vagrant](vagrantup.com).
 
 ## Functionality
 * List existing Vagrant environments
@@ -24,7 +24,8 @@ For additional instructions about installing workflows, check [Alfred's support]
 
 ## Usage
 #### List Vagrant environments
-To list all existing Vagrant environments, use keyword `vagrant`.
+To list all existing Vagrant environments, use keyword `vg`.
+(modified from original, since I got tired of typing `vagrant`.)
 
 #### Filtering list
 You can filter the list by `machine name`,`environment path` or `machine id`.
@@ -48,14 +49,14 @@ Because environment variables are not propagated into OS X applications, the wor
 
 If your setup is different, you should adjust these settings in the config file.
 
-To open the config file - open Alfred and type `vagrant workflow:settings`.
+To open the config file - open Alfred and type `vg workflow:settings`.
 
-In case you wish to reset setting to default type `vagrant workflow:delsettings`.
+In case you wish to reset setting to default type `vg workflow:delsettings`.
 
 ## Requirements
 1. Python 2.7 (Installed in OS X by default since 10.7)
-2. Alfred 2/3
-3. Vagrant (Preferebly 1.7+)
+2. Alfred 2/3/4
+3. Vagrant 1.7+
 
 ## Troubleshooting
 In case something isn't right, check the logs by typing `vagrant workflow:openlog`.
